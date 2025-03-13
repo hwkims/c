@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로또645</title>
+</head>
+<body>
+
+    <img src="static/image.jpg" alt="에반게리온" width="100"/><br>
+    <img src="{{url_for('static', filename='image.jpg')}}" /><br>
+    <img src="{{url_for('static', filename=imagePath)}}" /><br>
+
+    대박 기원합니다~<br/>
+    <h2>오늘 사세요</h2>
+
+    {{lotto}} <br/>
+
+    {% for i in lotto %}
+        {{i}}<br/>
+    {% endfor %}
+
+</body>
+</html>
